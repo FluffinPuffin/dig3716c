@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey - Chloe Becker</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/process_form.js"></script>
+</head>
+
+<body>
+    <div id="title">
+        <header class="header">DIG 3716 Survey</header>
+    </div>
+    <!-- Side bar -->
+    <div class="everything">
+        <div id="sidebar">
+            <img src="img/ad_2.jpg" alt="an image of an ad that is a product you had a conversation about">
+            <img src="img/ad_3.jpg" alt="an image on an ad that markets 'hot singles in your area'">
+        </div>
+
+        <div id="form_info">
+
+            <form method="get" name="info_form" id="info_form" action="process.php">
+                <!-- form 1-->
+                <fieldset class="form-fields" id="form-fields">
+
+                    <div class="form-header">
+                        <h1 class="title_headers">Please Enter Your Information</h1>
+                    </div>
+                    <!-- Form Q1/ first name -->
+                    <div class="field-wrap">
+
+                        <div id="form-q1">
+                            <label class="label">First Name</label>
+                            <input id="first_name" placeholder="Your name" type="text" name="first_name" value="">
+                            <img id="q1-i" src="./img/blank.jpg" alt="iconic symbol">
+                            <p class="hint-text-prior" id="q1-p">.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Form Q2/ last name-->
+                    <div class="field-wrap">
+
+                        <div id="form-q2">
+                            <label class="label">Last Name</label>
+                            <input id="last_name" placeholder="Your last name" type="text" name="last_name" value="">
+                            <img id="q2-i" src="./img/blank.jpg" alt="iconic symbol">
+                            <p class="hint-text-prior" id="q2-p">.</p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Form Q3/ phone -->
+                    <div class="field-wrap">
+
+                        <div id="form-q3">
+                            <label class="label">Phone Number</label>
+                            <input id="phone_number" placeholder="Your phone number" type="text" name="phone_number"
+                                value="">
+                            <img id="q3-i" src="./img/blank.jpg" alt="iconic symbol">
+                            <p class="hint-text-prior" id="q3-p">.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Form Q4/ email -->
+                    <div class="field-wrap">
+
+                        <div id="form-q4">
+                            <label class="label">Email</label>
+                            <input id="email" placeholder="Your email" type="text" name="email" value="">
+                            <img id="q4-i" src="./img/blank.jpg" alt="iconic symbol">
+                            <p class="hint-text-prior" id="q4-p">.</p>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Form Q5/ URL-->
+                    <div class="field-wrap">
+
+                        <div id="form-q5">
+                            <label class="label">Website</label>
+                            <input id="website" placeholder="Your website" type="text" name="website" value="">
+                            <img id="q5-i" src="./img/blank.jpg" alt="iconic symbol">
+                            <p class="hint-text-prior" id="q5-p">.</p>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </fieldset>
+                <!-- form 2/ quiz-->
+                <fieldset class="form-fields" id="quiz_field">
+
+                    <div class="form-header">
+                        <h1 class="title_headers">Fill the quiz out</h1>
+                    </div>
+                    <!-- quiz 1-->
+                    <div class="field-wrap">
+                        <p id="question-1" class="label">
+                            Are you competitive?
+                        </p>
+
+                        <div class="video-games">
+
+                            <input id="q1_opt1" type="radio" class="quiz" name="quiz_1" value="Yes">
+                            <label for="q1_opt1" class="quiz_text">Yes</label>
+                            <input id="q1_opt2" type="radio" class="quiz" name="quiz_1" value="No">
+                            <label for="q1_opt2" class="quiz_text">No</label>
+
+                        </div>
+                    </div>
+                    <!-- quiz 2-->
+                    <div class="field-wrap">
+                        <p id="question-2" class="label">
+                            Are you a sore loser?
+                        </p>
+
+                        <div class="video-games">
+
+                            <input id="q2_opt1" type="radio" class="quiz" name="quiz_2" value="Yes">
+                            <label for="q2_opt1" class="quiz_text">Yes</label>
+                            <input id="q2_opt2" type="radio" class="quiz" name="quiz_2" value="No">
+                            <label for="q2_opt2" class="quiz_text">No</label>
+
+                        </div>
+                    </div>
+                    <!-- quiz 3-->
+                    <div class="field-wrap">
+                        <p id="question-3" class="label">
+                            Do you blame your teammates?
+                        </p>
+
+                        <div class="video-games">
+
+                            <input id="q3_opt1" type="radio" class="quiz" name="quiz_3" value="Yes">
+                            <label for="q3_opt1" class="quiz_text">Yes</label>
+                            <input id="q3_opt2" type="radio" class="quiz" name="quiz_3" value="No">
+                            <label for="q3_opt2" class="quiz_text">No</label>
+
+                        </div>
+                    </div>
+                    <br>
+                    <button name="submit" id="submit-button" type="submit" value="submit">Submit</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <div id="test">
+            <!-- Ad -->
+            <img src="./img/ad_1.jpg" alt="an image of an ad trying to market useless vitamins">
+            <!-- Badge display -->
+            <div id="badge" class="badge-prior">
+                <p id="1" class="badge-text"></p>
+                <p id="2" class="badge-text"></p>
+                <p id="3" class="badge-text"></p>
+                <p id="4" class="badge-text"></p>
+                <img id="badge_img" src="./img/white_blank.jpg" alt="badge img">
+                <a id="5" class="badge-text"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer id=" footer">
+        <p>
+            Created for DIG 3716c by Chloe Becker
+        </p>
+    </footer>
+
+</body>
+
+</html>
